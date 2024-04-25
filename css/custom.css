@@ -1,0 +1,302 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.resume-section {
+    background-color: #ffffff;
+    margin-top: 80px; /* Adjust as needed for navbar height */
+}
+
+.resume-section .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.resume-section h2 {
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.resume-section p {
+    color: #555555;
+}
+
+/* For larger screens, you may want the image and content side by side */
+@media (min-width: 992px) {
+    .resume-section img {
+        border-radius: 50%;
+        margin-right: 2rem;
+    }
+    .resume-section .col-lg-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-section .col-lg-4,
+    .resume-section .col-lg-8 {
+        padding-top: 60px;
+    }
+}
+
+/* Customize your navigation and footer further as needed */
+
+.footer {
+    background-color: #222;
+    color: #dddddd;
+}
+
+.text-white {
+    color: #000; /* White text */
+}
+
+.resume-header h1 {
+    margin-bottom: 0; /* Remove bottom margin from the h1 tag */
+    font-size: 1.75rem; /* Set the font size for the header */
+}
+
+/* Ensuring the navigation text is visible on a black background */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; /* White text for contrast */
+}
+
+/* The navbar background color */
+.navbar {
+    background-color: #000; /* Black background */
+}
+
+/* Navbar links hover effect */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000000; /* Light grey on hover for better visibility */
+}
+
+/* Toggle button bars color */
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* The resume header styling */
+.resume-header {
+    color: #000; /* White text */
+    padding: 20px 0; /* Padding above and below the text */
+    width: 100%; /* Full width */
+    margin-top: 56px; /* Adjust to navbar's height */
+}
+
+/* Update the top padding on the body to prevent overlap with the fixed navbar */
+body {
+    padding-top: 56px; /* Height of the navbar plus additional space */
+}
+
+@media (max-width: 992px) {
+    /* Adjust top padding for mobile view */
+    body {
+        padding-top: 50px; /* Adjust based on mobile navbar height */
+    }
+    
+    /* Update the margin for the mobile view */
+    .resume-header {
+        margin-top: 50px; /* Adjust based on mobile navbar height */
+    }
+}
+/* Ensure the navbar has a solid background */
+.navbar {
+    background-color: #000 !important; /* Black background */
+    backdrop-filter: none !important; /* Remove any backdrop filter if it's set */
+    -webkit-backdrop-filter: none !important; /* For Safari */
+}
+
+/* Fix for when navbar expands on scroll if you have a shrink effect */
+.navbar.scrolled {
+    background-color: #000 !important; /* Black background when navbar is scrolled */
+}
+
+/* Make sure the text and icons are visible */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-toggler {
+    color: #fff !important; /* White text for better visibility */
+}
+
+/* Adjust the margin-top for the .resume-header */
+.resume-header {
+    margin-top: 56px; /* Adjust to your navbar's height */
+}
+
+.travel-exploration-section {
+    background-color: #9bbbc0; /* Light grey background to distinguish the section */
+}
+
+.travel-exploration-section .hobby-item {
+    text-align: left; /* Aligns text to the left for more formal reading */
+    padding: 15px; /* Adds padding around the content for spacing */
+    border-radius: 0.25rem; /* Optional: adds rounded corners to the container */
+    background-color: #fff; /* White background for the content boxes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    margin-bottom: 30px; /* Adds space between items */
+}
+
+.travel-exploration-section h3 {
+    color: #333; /* Dark color for headings */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+.travel-exploration-section p {
+    color: #555; /* Dark grey color for paragraph text */
+}
+
+/* Centering the Tableau visualization container */
+.tableau-visualization-section .container {
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    min-height: 100vh; /* Optional: Makes container take at least the height of the viewport */
+}
+
+.tableauPlaceholder {
+    width: 100%; /* Full width or adjust as needed */
+    max-width: 1000px; /* Maximum width of the Tableau visualization */
+}
+.embed-responsive {
+    margin-bottom: 1rem; /* Space below the embed */
+}
+
+/* Optional: If you need additional centering help for the embed */
+.video-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15%;
+
+}
+
+.fun-activities-section {
+    background: #c0cce1; /* White background for a clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2rem; /* Spacious padding for aeration */
+    border-radius: 8px; /* Soft rounded corners */
+    
+}
+
+.fun-activities-section h2 {
+    color: #2c3e50; /* Stylish dark blue for the title */
+    font-weight: 600; /* Semi-bold font for a touch of importance */
+    margin-bottom: 1rem; /* Space below the title */
+    text-align: center; /* Center-align the text */
+}
+
+.fun-activities-section ol {
+    counter-reset: section; /* Creates a new instance of the counter */
+    padding-left: 0; /* Removes default padding */
+    margin-top: 1rem; /* Adds a bit of margin at the top */
+}
+
+.fun-activities-section ol li {
+    counter-increment: section; /* Increment the counter */
+    margin-bottom: 1rem; /* Adds space between list items */
+    padding-left: 2.5rem; /* Adds space for the pseudo-element */
+    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    list-style: none; /* Removes default list-style */
+    cursor: pointer; /* Indicates the item is interactive */
+    transition: transform 0.3s; /* Smooth transition for the hover effect */
+}
+
+.fun-activities-section ol li::before {
+    content: counter(section) '.'; /* Display the counter before the item */
+    position: absolute; /* Absolute position */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    font-size: 1.2em; /* Larger font size for the counter */
+    font-weight: bold; /* Bold font weight for the counter */
+    color: #3498db; /* Blue color to match the title */
+}
+
+.fun-activities-section ol li:hover {
+    transform: translateX(10px); /* Moves the item to the right on hover */
+    color: #3498db; /* Changes text color on hover */
+}
+
+.fun-activities-section ol li ul {
+    padding-left: 1rem; /* Padding for the nested list */
+    list-style: disc inside; /* Bullets inside to align with the parent text */
+}
+
+.fun-activities-section ol li ul li {
+    cursor: default; /* Normal cursor for sub-items */
+    transition: none; /* No transition for sub-items */
+}
+/* Styling the button under the hobbies section */
+/* Centering the button container */
+.hobbies-section .text-center {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, useful if there are multiple lines */
+    margin-top: 20px; /* Add some top margin for spacing from the content above */
+}
+
+/* Button style enhancements for better visibility and interactivity */
+.hobbies-section .btn-primary {
+    background-color: #353738; /* Primary color for the button */
+    border: none; /* No borders */
+    color: #fff; /* White text color */
+    padding: 10px 25px; /* Padding around the text */
+    font-size: 1.1em; /* Slightly larger font size */
+    text-transform: uppercase; /* Uppercase text for styling */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for interactions */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.hobbies-section .btn-primary:hover, .hobbies-section .btn-primary:focus {
+    background-color: #21618C; /* Darker shade on hover/focus */
+    transform: scale(1.05); /* Slightly enlarge the button on hover/focus */
+}
+.horizontal-nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.horizontal-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.horizontal-nav .logo {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.horizontal-nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-nav .nav-links li {
+    margin-left: 20px;
+}
+
+.horizontal-nav .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.horizontal-nav .nav-links a:hover,
+.horizontal-nav .nav-links a.active {
+    color: #3498db;
+}
